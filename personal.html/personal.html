@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+           font-family:  "Poppins", sans-serif;
+           box-sizing: border-box;
+
+        }
+        body{
+          background-color: rgb(77, 69, 69);
+            color: white;
+
+        }
+        header{
+            height:50px ;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(230, 214, 214);
+
+        }
+       .navbar{
+        display: flex;
+        min-width: 500px;
+        align-items: center;
+        justify-content: space-around;
+
+        }
+        .navbar a{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .logo{
+            font-size: 20px;
+            font-weight: 700;
+            font-style: italic;
+            color: blue;
+            
+        }
+        .logo img{
+            height: 60px;
+            border-radius: 50px;
+
+        }
+      
+
+        
+        section{
+            display: flex;
+            justify-content: space-around;
+            margin: 25px 0px;
+        }
+        .first{
+            font-size: 30px;
+            width: 40%;
+           position: relative;
+           top: 60px;
+        }
+        .first span{
+            color: rgb(43, 195, 226);
+        }
+        
+        
+       
+        .second{
+           
+            width: 40%;
+        }
+        .second img{
+            height: 400px;
+            width: 400px;
+            border-radius: 20px;
+          margin: 20px 0px;
+        }
+        article{
+            height: 500px;
+            margin: 20px 0px;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        #about{
+            color:rgb(22, 119, 160);
+            font-size: 40px;
+            font-weight: 400;
+            right:3px;
+        }
+        .image img{
+            height: 400px;
+            width: 400px;
+            border-radius: 30px;
+            margin-right: 140px;
+        }
+        footer{
+          display: flex;
+            height: 200px;
+            justify-content: space-around;
+         
+
+        }
+        .f{
+            color: aquamarine;
+        }
+        .f ul li{
+            color: aqua;
+        }
+        .s{
+            color: aquamarine;
+        }
+        .s ul li{
+            color: aqua;
+        }
+    #contact{
+        color: rgb(72, 72, 224);
+    }
+      
+       
+    </style>
+</head>
+
+<body>
+    <header>
+       <div class="logo">
+       <img src="FB_IMG_1708414156859.jpg" alt="logo image">
+       
+       </div>
+       <div class="navbar">
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">contact</a>
+        <a href="#">services</a>
+        <a href="#">project</a>
+       </div>
+    </header>
+    <main>
+        <section>
+            <div class="first">
+                Hi, My name is  <span> Bibek kumar sah</span>
+              <div> I am a 
+                <span id="element"></span>
+              </div>
+              
+            </div>
+            <div class="second">
+                <img src="OIP (5).jpg" alt="image">
+            </div>
+        </section>
+        <article>
+            
+            <div class="firsttime">
+            <span id="about"></span>
+            </div>
+            <div class="image">
+                <img src="OIP (6).jpg" alt="">
+               </div>  
+        </article>
+    </main>
+    <footer>
+      <div class="f">
+        Personal Skills
+   
+      <ul>
+        <li>
+      
+      
+       Critical-thinking</li>
+        <li> Problem-solving</li>
+        <li>Oral and written communication</li>
+        <li>  Leadership</li>
+         <li>Time management</li>
+        </ul>
+      </div>
+      <div class="s">
+        Professional Skills
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <Li>JAVASCRIPT</Li>
+            <Li>BOOTSTRAP</Li>
+            <Li>TAILWIND CSS</Li>
+            <li> MYSQL</li>
+        </ul>
+      </div>
+      <div class="contact">
+        contact:
+        <span id="contact"></span>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+       var typed = new Typed('#element', {
+      strings: ['Frontend developer', 'web developer'],
+      typeSpeed: 50,
+
+    });
+    var typed = new Typed('#about', {
+      strings: ['A Fresher Front End Developer focuses on creating user-friendly web pages with HTML, CSS, and JavaScript, and continuously improves their skills to maintain and optimize web applications', ' Thanks you for visiting my website.'],
+      typeSpeed:50,
+      
+    });
+    var typed = new Typed('#contact', {
+      strings: ['bibekkumarsah.456@gmail.com'],
+      typeSpeed:50,
+      
+    });
+      </script>
+       
+</body>
+</html>
